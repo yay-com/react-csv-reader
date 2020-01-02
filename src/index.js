@@ -35,7 +35,9 @@ const CSVReader = ({
   }
 
   return (
-    <div className={cssClass}>
+    <div 
+        // className={cssClass}
+      >
       {label && <label htmlFor={inputId}>{label}</label>}
       <input
         className={cssInputClass}
