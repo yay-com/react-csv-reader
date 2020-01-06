@@ -18,7 +18,8 @@ const CSVReader = ({
     let reader = new FileReader()
     if (e.target.files.length > 0) {
       const filename = e.target.files[0].name
-      const inputFile = e.target.files[0]
+      const inputFile = e.target.files[0];
+      console.log(e.target.files);
       reader.onload = event => {
         const csvData = PapaParse.parse(
           event.target.result,
